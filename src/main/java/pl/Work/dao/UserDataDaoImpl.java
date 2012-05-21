@@ -1,37 +1,50 @@
 package pl.Work.dao;
 
+import java.util.List;
+
+import javax.annotation.Resource;
+
 import pl.Work.model.UserData;
-import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
-import org.springframework.transaction.annotation.Transactional;
 
-public class UserDataDaoImpl extends HibernateDaoSupport implements UserDateDao {
+import org.apache.log4j.Logger;
+import org.hibernate.SessionFactory;
+import org.springframework.stereotype.Repository;
 
+//import org.springframework.transaction.annotation.Transactional;
+@Repository("userDataDao")
+public class UserDataDaoImpl implements UserDataDao {
+	protected static Logger logger = Logger.getLogger("dao");
+	
+	@Resource(name="sessionFactory")
+	private SessionFactory sessionFactory;
+	
 	@Override
-	@Transactional
 	public void create(UserData userData) {
-		getHibernateTemplate().save(userData);
+		sessionFactory.getCurrentSession().save(userData);
 		// TODO Auto-generated method stub
 
 	}
-
+	
 	@Override
-	@Transactional
 	public UserData read(String userDataNr) {
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
-
+	
 	@Override
-	@Transactional(readOnly=true)
 	public void update(UserData userData) {
-		throw new UnsupportedOperationException("Not supported yet.");
-
+		sessionFactory.getCurrentSession().update(userData);
 	}
 
 	@Override
-	@Transactional
 	public void delete(UserData userData) {
-		getHibernateTemplate().update(userData);
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
 
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<UserData> getAll() {
+		// TODO Auto-generated method stub
+		return sessionFactory.getCurrentSession().createQuery("from userData").list();
 	}
 
 }
