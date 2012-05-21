@@ -14,6 +14,7 @@
           <string>WEB-INF/jsp/hello.jsp</string>
           <string>WEB-INF/jsp/layout.jsp</string>
           <string>WEB-INF/jsp/menu.jsp</string>
+          <string>WEB-INF/jsp/person.jsp</string>
           <string>WEB-INF/spring-servlet.xml</string>
           <string>WEB-INF/spring.properties</string>
           <string>WEB-INF/tiles-context.xml</string>
@@ -22,8 +23,7 @@
           <string>WEB-INF/classes/log4j.properties</string>
           <string>WEB-INF/classes/pl/Work/controller/ContactController.class</string>
           <string>WEB-INF/classes/pl/Work/controller/HelloWorldControler.class</string>
-          <string>WEB-INF/classes/pl/Work/dao/UserDataDao.class</string>
-          <string>WEB-INF/classes/pl/Work/dao/UserDataDaoImpl.class</string>
+          <string>WEB-INF/classes/pl/Work/controller/PersonControler.class</string>
           <string>WEB-INF/classes/pl/Work/Main.class</string>
           <string>WEB-INF/classes/pl/Work/model/UserData.class</string>
           <string>WEB-INF/classes/pl/Work/service/UserDataService.class</string>

@@ -9,11 +9,10 @@ import pl.Work.model.UserData;
 import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service("userDataService")
-@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+@Transactional
 public class UserDataServiceImpl implements UserDataService {
 	protected static Logger logger = Logger.getLogger("service");
 	
@@ -44,7 +43,7 @@ public class UserDataServiceImpl implements UserDataService {
 	@Override
 	public List<UserData> getAll() {
 		// TODO Auto-generated method stub
-		return sessionFactory.getCurrentSession().createQuery("from userData").list();
+		return sessionFactory.getCurrentSession().createQuery("from pl.Work.model.UserData").list();
 	}
 
 }
