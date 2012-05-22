@@ -5,15 +5,34 @@
       <path-set>
         <pathsSet class="linked-hash-set">
           <string>index.jsp</string>
+          <string>media/css/datepicker.css</string>
           <string>media/css/demo_page.css</string>
           <string>media/css/demo_table.css</string>
           <string>media/css/demo_table_jui.css</string>
           <string>media/css/jquery.dataTables.css</string>
           <string>media/css/jquery.dataTables_themeroller.css</string>
+          <string>media/css/layout.css</string>
           <string>media/images/back_disabled.png</string>
           <string>media/images/back_enabled.png</string>
           <string>media/images/back_enabled_hover.png</string>
+          <string>media/images/custom_b.png</string>
+          <string>media/images/custom_bl.png</string>
+          <string>media/images/custom_br.png</string>
+          <string>media/images/custom_l.png</string>
+          <string>media/images/custom_r.png</string>
+          <string>media/images/custom_t.png</string>
+          <string>media/images/custom_tl.png</string>
+          <string>media/images/custom_tr.png</string>
+          <string>media/images/datepicker_b.png</string>
+          <string>media/images/datepicker_bl.png</string>
+          <string>media/images/datepicker_br.png</string>
+          <string>media/images/datepicker_l.png</string>
+          <string>media/images/datepicker_r.png</string>
+          <string>media/images/datepicker_t.png</string>
+          <string>media/images/datepicker_tl.png</string>
+          <string>media/images/datepicker_tr.png</string>
           <string>media/images/favicon.ico</string>
+          <string>media/images/field.png</string>
           <string>media/images/forward_disabled.png</string>
           <string>media/images/forward_enabled.png</string>
           <string>media/images/forward_enabled_hover.png</string>
@@ -23,9 +42,14 @@
           <string>media/images/sort_both.png</string>
           <string>media/images/sort_desc.png</string>
           <string>media/images/sort_desc_disabled.png</string>
+          <string>media/index.html</string>
+          <string>media/js/datepicker.js</string>
+          <string>media/js/eye.js</string>
           <string>media/js/jquery.dataTables.js</string>
           <string>media/js/jquery.dataTables.min.js</string>
           <string>media/js/jquery.js</string>
+          <string>media/js/layout.js</string>
+          <string>media/js/utils.js</string>
           <string>media/src/api/api.internal.js</string>
           <string>media/src/api/api.methods.js</string>
           <string>media/src/api/api.static.js</string>
@@ -400,10 +424,12 @@
           <string>WEB-INF/jsp/footer.jsp</string>
           <string>WEB-INF/jsp/header.jsp</string>
           <string>WEB-INF/jsp/hello.jsp</string>
+          <string>WEB-INF/jsp/jscontact.jsp</string>
           <string>WEB-INF/jsp/jslayout.jsp</string>
           <string>WEB-INF/jsp/layout.jsp</string>
           <string>WEB-INF/jsp/menu.jsp</string>
           <string>WEB-INF/jsp/person.jsp</string>
+          <string>WEB-INF/messages.properties</string>
           <string>WEB-INF/spring-servlet.xml</string>
           <string>WEB-INF/spring.properties</string>
           <string>WEB-INF/tiles-context.xml</string>
@@ -470,6 +496,8 @@
           <string>WEB-INF/lib/dom4j-1.6.1.jar</string>
           <string>WEB-INF/lib/xml-apis-1.0.b2.jar</string>
           <string>WEB-INF/lib/jta-1.1.jar</string>
+          <string>WEB-INF/lib/hibernate-validator-4.1.0.Final.jar</string>
+          <string>WEB-INF/lib/validation-api-1.0.0.GA.jar</string>
           <string>WEB-INF/lib/cglib-nodep-2.2.jar</string>
           <string>WEB-INF/lib/hibernate-annotations-3.4.0.GA.jar</string>
           <string>WEB-INF/lib/ejb3-persistence-1.0.2.GA.jar</string>
@@ -647,6 +675,18 @@
         <optional>false</optional>
       </dependency>
       <targetFileName>hibernate-core-3.3.2.GA.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>4.1.0.Final</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <optional>false</optional>
+      </dependency>
+      <targetFileName>hibernate-validator-4.1.0.Final.jar</targetFileName>
     </org.apache.maven.plugin.war.util.DependencyInfo>
     <org.apache.maven.plugin.war.util.DependencyInfo>
       <dependency>

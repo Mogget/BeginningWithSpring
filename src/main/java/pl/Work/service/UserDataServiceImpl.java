@@ -1,5 +1,6 @@
 package pl.Work.service;
 
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -21,6 +22,8 @@ public class UserDataServiceImpl implements UserDataService {
 	
 	@Override
 	public void create(UserData userData) {
+		//SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+		//sdf.parse(userData.getDate());
 		sessionFactory.getCurrentSession().save(userData);
 	}
 	
