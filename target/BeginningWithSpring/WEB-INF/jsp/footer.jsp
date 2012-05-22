@@ -1,1 +1,1 @@
-<p>Copyright &copy; ViralPatel.net</p>
+<p>Copyright &copy; Karol Skoruch</p>

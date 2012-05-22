@@ -17,12 +17,12 @@
 		<td><form:input path="lastname" /></td>
 	</tr>
 	<tr>
-		<td><form:label path="lastname">Email</form:label></td>
+		<td><form:label path="email">Email</form:label></td>
 		<td><form:input path="email" /></td>
 	</tr>
 	<tr>
-		<td><form:label path="lastname">Telephone</form:label></td>
-		<td><form:input path="telephone" /></td>
+		<td><form:label path="date">Birth Date</form:label></td>
+		<td><form:input path="date" /></td>
 	</tr>
 	<tr>
 		<td colspan="2">
