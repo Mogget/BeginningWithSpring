@@ -10,6 +10,7 @@
         <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
         <put-attribute name="body" value="" />
         <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+        <put-attribute name="jsfile" value="" />
     </definition>
  
     <definition name="contact" extends="base.definition">
@@ -20,6 +21,16 @@
     <definition name="person" extends="base.definition">
         <put-attribute name="title" value="Person Manager" />
         <put-attribute name="body" value="/WEB-INF/jsp/person.jsp" />
+        <put-attribute name="jsfile" value="app.personPage.jsfiles.tile" />
+    </definition>
+    
+    <!-- JS Files Definition tile -->
+ 
+    <definition name="app.personPage.jsfiles.tile" template="/WEB-INF/jsp/jslayout.jsp">
+        <put-list-attribute name="jsfilesList">
+            <add-attribute value="/media/js/jquery.js"/>
+            <add-attribute value="/media/js/jquery.dataTables.js"/>
+        </put-list-attribute>
     </definition>
  
 </tiles-definitions>

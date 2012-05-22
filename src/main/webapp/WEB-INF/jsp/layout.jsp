@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title><tiles:insertAttribute name="title" ignore="true" /></title>
+<tiles:insertAttribute name="jsfile" ignore="true" />
 </head>
 <body>
 <table border="1" cellpadding="2" cellspacing="2" align="center">
