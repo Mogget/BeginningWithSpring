@@ -6,6 +6,7 @@
         <pathsSet class="linked-hash-set">
           <string>index.jsp</string>
           <string>media/css/datepicker.css</string>
+          <string>media/css/default.css</string>
           <string>media/css/demo_page.css</string>
           <string>media/css/demo_table.css</string>
           <string>media/css/demo_table_jui.css</string>

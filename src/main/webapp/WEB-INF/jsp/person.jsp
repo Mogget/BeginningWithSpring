@@ -29,11 +29,11 @@
 		</tbody>
 		<tfoot>
 			<tr>
-				<th>Person ID</th>
-				<th>Person First Name</th>
-				<th>Person Last Name</th>
-				<th>Person Email</th>
-				<th>Person Date</th>
+				<th>Person_ID</th>
+				<th>Person_First_Name</th>
+				<th>Person_Last_Name</th>
+				<th>Person_Email</th>
+				<th>Person_Date</th>
 			</tr>
 		</tfoot>
 	</table>
