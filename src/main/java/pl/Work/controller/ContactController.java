@@ -10,33 +10,32 @@ import pl.Work.service.UserDataService;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @SessionAttributes
 @RequestMapping("/contacts")
 public class ContactController {
-	
-	@Resource(name="userDataService")
+
+	@Resource(name = "userDataService")
 	UserDataService userDataService;
-	
+
 	protected static Logger logger = Logger.getLogger("controller");
-	
+
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@RequestMapping(method = RequestMethod.POST)
-	public String addContact(@Valid UserData userData, 
-			BindingResult result, Map model) {
-		
+	public String addContact(@Valid UserData userData, BindingResult result,
+			Map model) {
+
 		logger.debug("Received request to show addcontact");
-		
-		if(result.hasErrors()){
+
+		if (result.hasErrors()) {
 			return "contact";
 		}
-		
+
 		userDataService.create(userData);
 
 		System.out.println("First Name:" + userData.getFirstname()
@@ -45,6 +44,7 @@ public class ContactController {
 		return "redirect:contacts.html";
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@RequestMapping(method = RequestMethod.GET)
 	public String showContacts(Map model) {
 		logger.debug("Received request to show contact");

@@ -17,16 +17,16 @@ import pl.Work.service.UserDataService;
 @Controller
 @SessionAttributes
 public class PersonControler {
-	@Resource(name="userDataService")
+	@Resource(name = "userDataService")
 	UserDataService userDataService;
-	
+
 	protected static Logger logger = Logger.getLogger("controller");
-	
+
 	@RequestMapping(value = "/persons", method = RequestMethod.GET)
 	public ModelAndView showContacts() {
 		logger.debug("Received request to show person");
 		Map<String, Object> model = new HashMap<String, Object>();
-		model.put("persons",  userDataService.getAll());
+		model.put("persons", userDataService.getAll());
 		return new ModelAndView("person", model);
 	}
 }
