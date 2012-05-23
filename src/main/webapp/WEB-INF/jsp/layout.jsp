@@ -6,11 +6,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title><tiles:insertAttribute name="title" ignore="true" /></title>
 <style type="text/css" title="currentStyle">
-	<tiles:insertAttribute name="cssList" ignore="true" />	
+	<tiles:insertAttribute name="cssFiles" ignore="true" />	
 	@import "<%=request.getContextPath()%><tiles:getAsString name='cssDefault' />";
-	@import "<%=request.getContextPath()%><tiles:getAsString name='css' ignore='true'/>";
 </style>
-<tiles:insertAttribute name="jsfile" ignore="true" />
+<tiles:insertAttribute name="jsFiles" ignore="true" />
 </head>
 <body>
 	<div id="top">
