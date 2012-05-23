@@ -6,18 +6,27 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title><tiles:insertAttribute name="title" ignore="true" /></title>
 <style type="text/css" title="currentStyle">
-	@import "<%=request.getContextPath()%><tiles:getAsString name="cssDefault" />";
-	@import "<%=request.getContextPath()%><tiles:getAsString name="css" />";
+	<tiles:insertAttribute name="cssList" ignore="true" />	
+	@import "<%=request.getContextPath()%><tiles:getAsString name='cssDefault' />";
+	@import "<%=request.getContextPath()%><tiles:getAsString name='css' ignore='true'/>";
 </style>
 <tiles:insertAttribute name="jsfile" ignore="true" />
 </head>
 <body>
-<div id="top">
-<div id="header"><tiles:insertAttribute name="header" /></div>
-        <div id="menu"><tiles:insertAttribute name="menu" /></div>
-        <div id="body"><tiles:insertAttribute name="body" /></div>
+	<div id="top">
+		<div id="header">
+			<tiles:insertAttribute name="header" />
+		</div>
+		<div id="menu">
+			<tiles:insertAttribute name="menu" />
+		</div>
+		<div id="body">
+			<tiles:insertAttribute name="body" />
+		</div>
 
-        <div id="footer"><tiles:insertAttribute name="footer" /></div>
-</div>
+		<div id="footer">
+			<tiles:insertAttribute name="footer" />
+		</div>
+	</div>
 </body>
 </html>
