@@ -1,6 +1,7 @@
 package pl.Work.model;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -77,6 +78,7 @@ public class UserData implements Serializable {
 	}
 
 	public Date getDate() {
+		
 		return date;
 	}
 
